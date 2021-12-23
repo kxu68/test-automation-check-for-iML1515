@@ -28,12 +28,12 @@ jobs:
     - name: Install cobrapy 
       run: |
         pip install cobra
-    - name: Lint with flake8 #check common mistakes for tools for common tests. can also find potential problems and things deviate from python convention
-      run: |
-        # stop the build if there are Python syntax errors or undefined names, dot means runing in entire repository, count all errors and only select specific or ignore few,
-        flake8 . --count --show-source --statistics 
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+#     - name: Lint with flake8 #check common mistakes for tools for common tests. can also find potential problems and things deviate from python convention
+#       run: |
+#         # stop the build if there are Python syntax errors or undefined names, dot means runing in entire repository, count all errors and only select specific or ignore few,
+#         flake8 . --count --show-source --statistics 
+#         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+#         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
         pytest test_iml1515second_check.py
