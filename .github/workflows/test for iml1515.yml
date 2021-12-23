@@ -36,4 +36,4 @@ jobs:
         pip install cobra
     - name: Test with pytest
       run: |
-        pytest test_iml1515second check.py
+        pytest test_iml1515second_check.py
